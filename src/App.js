@@ -1,0 +1,26 @@
+/* eslint-disable import/order */
+/* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
+
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
+import { Navbar } from './components';
+import './App.css';
+import { Toaster } from 'react-hot-toast';
+
+const App = () => (
+  <div>
+    <Navbar />
+    <Toaster/>
+    <Header />
+    <AboutUs />
+    <SpecialMenu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+    <Footer />
+  </div>
+);
+
+export default App;
